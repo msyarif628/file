@@ -1,0 +1,86 @@
+{
+  "scale": 10000,
+  "threshold": 7000,
+  "vectors": [
+    {
+      "name": "tiny normal withdrawal",
+      "features": [
+        -3010,
+        10000,
+        -3010,
+        0
+      ],
+      "expected_score": 3
+    },
+    {
+      "name": "normal withdrawal, known recipient",
+      "features": [
+        10000,
+        20000,
+        11761,
+        0
+      ],
+      "expected_score": 3
+    },
+    {
+      "name": "normal withdrawal, fresh recipient",
+      "features": [
+        13979,
+        30000,
+        17782,
+        10000
+      ],
+      "expected_score": 3
+    },
+    {
+      "name": "medium transfer, burst of 4",
+      "features": [
+        21761,
+        40000,
+        26021,
+        10000
+      ],
+      "expected_score": 8915
+    },
+    {
+      "name": "drain burst, 5 x 800 tokens",
+      "features": [
+        29031,
+        50000,
+        34771,
+        10000
+      ],
+      "expected_score": 9997
+    },
+    {
+      "name": "drain burst, 8 x 2000 tokens",
+      "features": [
+        33010,
+        80000,
+        40792,
+        10000
+      ],
+      "expected_score": 9997
+    },
+    {
+      "name": "single sweep, 5000 tokens",
+      "features": [
+        36990,
+        10000,
+        36990,
+        10000
+      ],
+      "expected_score": 9997
+    },
+    {
+      "name": "medium single, known recipient",
+      "features": [
+        20000,
+        10000,
+        20000,
+        0
+      ],
+      "expected_score": 3
+    }
+  ]
+}
